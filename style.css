@@ -5,14 +5,10 @@
   --card-hover-transform: translateY(-5px);
 }
 
-/* ==========================================
-   GLOBAL LOCAL BACKGROUND IMAGE FOR ALL PAGES
-   ========================================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-  /* 1. Linear-gradient overlay එකෙන් photo එක උඩ තිබ්බත් text පැහැදිලිව පෙනෙනවා */
-  /* 2. ../images/my-car-bg.jpg මගින් css folder එකෙන් එළියට ඇවිත් images folder එකට යනවා */
+  /* Online Test Image */
   background: linear-gradient(rgba(245, 247, 250, 0.88), rgba(245, 247, 250, 0.88)),
               url('images/car.jpg') center/cover fixed no-repeat !important;
   
