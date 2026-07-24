@@ -68,7 +68,7 @@ main {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-  /* Online link එක වෙනුවට local file path එක ('../images/my-car-bg.jpg') දුන්නා */
+ 
   background: linear-gradient(rgba(245, 247, 250, 0.88), rgba(245, 247, 250, 0.88)),
               url('image/img.jpg') center/cover fixed no-repeat;
   
