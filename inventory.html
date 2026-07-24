@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Motors | Inventory</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-danger" href="index.html"><i class="bi bi-speedometer2"></i> APEX MOTORS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="inventory.html">Inventory</a></li>
+          <li class="nav-item"><a class="nav-link" href="details.html">Vehicle Details</a></li>
+          <li class="nav-item"><a class="nav-link" href="sell.html">Sell / Trade</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="fw-bold mb-4">Current Vehicle Inventory</h2>
+    
+    <div class="row">
+      <!-- Filter Sidebar -->
+      <div class="col-lg-3 mb-4">
+        <div class="card p-3 shadow-sm filter-card border-0">
+          <h5 class="fw-bold mb-3"><i class="bi bi-funnel"></i> Filter Search</h5>
+          
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Search Keywords</label>
+            <input type="text" id="searchInput" class="form-control" placeholder="e.g. Porsche, M4...">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Make</label>
+            <select id="makeFilter" class="form-select">
+              <option value="all">All Makes</option>
+              <option value="porsche">Porsche</option>
+              <option value="bmw">BMW</option>
+              <option value="tesla">Tesla</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Body Style</label>
+            <select id="bodyFilter" class="form-select">
+              <option value="all">All Body Styles</option>
+              <option value="coupe">Coupe</option>
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inventory Vehicle Grid -->
+      <div class="col-lg-9">
+        <div class="row g-4" id="inventoryGrid">
+          
+          <!-- Car Item 1 -->
+          <div class="col-md-6 car-item" data-title="Porsche 911 Carrera" data-make="porsche" data-body="coupe">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Porsche">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge bg-danger">Coupe</span>
+                  <span class="fw-bold text-success fs-5">$112,000</span>
+                </div>
+                <h5 class="card-title fw-bold">2024 Porsche 911 Carrera</h5>
+                <p class="text-muted small"><i class="bi bi-speedometer2"></i> 1,200 mi • Automatic</p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <a href="details.html" class="btn btn-dark w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car Item 2 -->
+          <div class="col-md-6 car-item" data-title="BMW M4 Competition" data-make="bmw" data-body="coupe">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="BMW">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge bg-secondary">Coupe</span>
+                  <span class="fw-bold text-success fs-5">$68,500</span>
+                </div>
+                <h5 class="card-title fw-bold">2022 BMW M4 Competition</h5>
+                <p class="text-muted small"><i class="bi bi-speedometer2"></i> 18,400 mi • Automatic</p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <a href="details.html" class="btn btn-dark w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car Item 3 -->
+          <div class="col-md-6 car-item" data-title="Tesla Model S Plaid" data-make="tesla" data-body="sedan">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Tesla">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge bg-primary">Sedan</span>
+                  <span class="fw-bold text-success fs-5">$74,900</span>
+                </div>
+                <h5 class="card-title fw-bold">2023 Tesla Model S Plaid</h5>
+                <p class="text-muted small"><i class="bi bi-speedometer2"></i> 9,100 mi • Automatic</p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <a href="details.html" class="btn btn-dark w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car Item 4 -->
+          <div class="col-md-6 car-item" data-title="Audi RS6 Avant" data-make="audi" data-body="suv">
+            <div class="card h-100 border-0 shadow-sm card-hover">
+              <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Audi">
+              <div class="card-body">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="badge bg-dark">SUV / Wagon</span>
+                  <span class="fw-bold text-success fs-5">$118,000</span>
+                </div>
+                <h5 class="card-title fw-bold">2023 Audi RS6 Avant</h5>
+                <p class="text-muted small"><i class="bi bi-speedometer2"></i> 5,400 mi • Automatic</p>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <a href="details.html" class="btn btn-dark w-100">View Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Apex Motors. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
