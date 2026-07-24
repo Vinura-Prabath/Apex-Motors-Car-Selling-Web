@@ -14,7 +14,7 @@ body {
   /* 1. Linear-gradient overlay එකෙන් photo එක උඩ තිබ්බත් text පැහැදිලිව පෙනෙනවා */
   /* 2. ../images/my-car-bg.jpg මගින් css folder එකෙන් එළියට ඇවිත් images folder එකට යනවා */
   background: linear-gradient(rgba(245, 247, 250, 0.88), rgba(245, 247, 250, 0.88)),
-              url('../images/my-car-bg.jpg') center/cover fixed no-repeat !important;
+              url('images/car.jpg') center/cover fixed no-repeat !important;
   
   display: flex;
   flex-direction: column;
