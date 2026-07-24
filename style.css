@@ -5,9 +5,6 @@
   --card-hover-transform: translateY(-5px);
 }
 
-/* ==========================================
-   GLOBAL BACKGROUND IMAGE FOR ALL 5 PAGES
-   ========================================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
@@ -18,73 +15,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-/* Card, Accordion, and Table backgrounds semi-transparent kirima */
-.card, 
-.table, 
-.accordion-item, 
-.filter-card {
-  background-color: rgba(255, 255, 255, 0.92) !important;
-  backdrop-filter: blur(6px); /* Dynamic glassmorphism effect */
-}
-
-/* Page sections overlay removal */
-section.bg-white,
-section.bg-light {
-  background-color: transparent !important;
-}
-
-/* Navbar Enhancements */
-.navbar-brand {
-  letter-spacing: 1px;
-}
-
-/* Hero Section Background (Home page top banner) */
-.hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
-              url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-  min-height: 70vh;
-}
-
-/* Card Hover Effects */
-.card-hover {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card-hover:hover {
-  transform: var(--card-hover-transform);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Vehicle Details Gallery */
-.main-detail-img {
-  max-height: 450px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.gallery-thumb {
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-  height: 80px;
-  object-fit: cover;
-}
-
-.gallery-thumb:hover, .gallery-thumb.active {
-  opacity: 1;
-  border: 2px solid var(--primary-red);
-}
-
-/* Custom Scrollbar for Filters */
-.filter-card {
-  position: sticky;
-  top: 90px;
 }
 
 main {
