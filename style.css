@@ -70,7 +70,7 @@ body {
   
  
   background: linear-gradient(rgba(245, 247, 250, 0.88), rgba(245, 247, 250, 0.88)),
-              url('image/img.jpg') center/cover fixed no-repeat;
+              url('image/CarImage.jpg') center/cover fixed no-repeat;
   
   display: flex;
   flex-direction: column;
